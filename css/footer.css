@@ -1,0 +1,35 @@
+.footer{
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    min-height: 300px;
+    max-height: max-content;
+}
+
+.text-area{
+    margin: auto;
+    max-width: 1300px;
+    text-align: center;
+    padding-top: 50px;
+    align-items: center;
+}
+
+.footer-title{
+    color: white;
+    display: block;
+	font-size: clamp(42.068px, 2.629rem + ((1vw - 3.2px) * 2.963), 80px);
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.copyright{
+    color: white;
+    display: block;
+	font-size: clamp(12.068px, 2.629rem + ((1vw - 3.2px) * 2.963), 10px);
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
