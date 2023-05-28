@@ -27,12 +27,14 @@
 }
 
 .navbar-web{
+    margin:auto;
     margin: 50px 10px auto;
     max-width:1300px;
     display: flex;
 }
 
 .navbar-tab{
+    margin: auto;
     margin: 50px auto auto;
     width:90%;
     display: flex;
