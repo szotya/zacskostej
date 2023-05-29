@@ -609,67 +609,8 @@ a:hover{
     line-height: 1;
 }
 
-/** Internet Explorer */
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .top-28 {
-        top: 14rem !important;
-    }
-    
-    .top-32 {
-        top: 23rem !important;
-    }
-    
-    .top-36 {
-        top: 20rem !important;
-    }
-    
-    .top-16 {
-        top: 8rem !important;
-    }
-}
-    
-/** Microsoft Edge */
-@supports (-ms-ime-align: auto) {
-    .top-28 {
-        top: 14rem !important;
-    }
-    
-    .top-32 {
-        top: 23rem !important;
-    }
-    
-    .top-36 {
-        top: 20rem !important;
-    }
-    
-    .top-16 {
-        top: 8rem !important;
-    }
-    
-}
-    
-/** Mozilla Firefox */
-@-moz-document url-prefix() {
-    .top-28 {
-        top: 14rem !important;
-    }
-    
-    .top-32 {
-        top: 23rem !important;
-    }
-    
-    .top-36 {
-        top: 20rem !important;
-    }
-    
-    .top-16 {
-        top: 8rem !important;
-    }
-    
-}
-    
-/** Safari */
- @media not all and (min-resolution: 0.001dpcm) {
+@supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */ 
     .top-28 {
         top: 7rem !important;
     }
@@ -684,48 +625,28 @@ a:hover{
     
     .top-16 {
         top: 4rem !important;
-        
-    }
-}
-    
-/** Chrominum */
-@media screen and (-webkit-min-device-pixel-ratio: 0){
-    .top-28 {
-        top: 14rem !important;
-    }
-    
-    .top-32 {
-        top: 23rem !important;
-    }
-    
-    .top-36 {
-        top: 20rem !important;
-    }
-    
-    .top-16 {
-        top: 8rem !important;
-    }
-}
-    
-/** Chrominum */
-@media screen and (-webkit-min-device-pixel-ratio: 0){
-    .top-28 {
-        top: 14rem !important;
-    }
-    
-    .top-32 {
-        top: 23rem !important;
-    }
-    
-    .top-36 {
-        top: 20rem !important;
-    }
-    
-    .top-16 {
-        top: 8rem !important;
-    }
-}
 
+    }
+  }
+  
+  @supports not (-webkit-touch-callout: none) {
+    /* CSS for other than iOS devices */ 
+    .top-28 {
+        top: 14rem !important;
+    }
+    
+    .top-32 {
+        top: 23rem !important;
+    }
+    
+    .top-36 {
+        top: 20rem !important;
+    }
+    
+    .top-16 {
+        top: 8rem !important;
+    }
+  }
 
 .bg-black{
     --tw-bg-opacity: 1;
