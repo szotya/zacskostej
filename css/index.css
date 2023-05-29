@@ -609,6 +609,26 @@ a:hover{
     line-height: 1;
 }
 
+@media not all and (min-resolution:.001dpcm){
+	
+    .top-28 {
+        top: 7rem !important;
+    }
+    
+    .top-32 {
+        top: 11rem !important;
+    }
+    
+    .top-36 {
+        top: 10rem !important;
+    }
+    
+    .top-16 {
+        top: 4rem !important;
+    }
+	
+}
+
 .top-28 {
     top: 14rem !important;
 }
