@@ -628,28 +628,9 @@ a:hover{
 
     }
 }
-    
-/** Chrominum */
-@media screen and (-webkit-min-device-pixel-ratio: 0){
-    .top-28 {
-        top: 14rem !important;
-    }
-    
-    .top-32 {
-        top: 23rem !important;
-    }
-    
-    .top-36 {
-        top: 20rem !important;
-    }
-    
-    .top-16 {
-        top: 8rem !important;
-    }
-}
-    
-/** Chrominum */
-@media screen and (-webkit-min-device-pixel-ratio: 0){
+   
+@supports not (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */ 
     .top-28 {
         top: 14rem !important;
     }
