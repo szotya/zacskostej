@@ -690,19 +690,19 @@ a:hover{
 /** Chrominum */
 @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
     .top-28 {
-        top: 14rem !important;
+        top: 7rem !important;
     }
     
     .top-32 {
-        top: 23rem !important;
+        top: 11rem !important;
     }
     
     .top-36 {
-        top: 20rem !important;
+        top: 10rem !important;
     }
     
     .top-16 {
-        top: 8rem !important;
+        top: 4rem !important;
     }
 }
 
