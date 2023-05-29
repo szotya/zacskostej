@@ -670,7 +670,7 @@ a:hover{
     
 /** Safari */
  @media not all and (min-resolution: 0.001dpcm) {
-    .top-28 {
+    /*.top-28 {
         top: 7rem !important;
     }
     
@@ -684,7 +684,7 @@ a:hover{
     
     .top-16 {
         top: 4rem !important;
-    }
+    }*/
 }
     
 /** Chrominum */
