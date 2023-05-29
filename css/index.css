@@ -687,7 +687,7 @@ a:hover{
     }*/
 }
     
-/** Chrominum */
+/** Chrominum */ /*Az nem vágom mi*/
 @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
     .top-28 {
         top: 7rem !important;
