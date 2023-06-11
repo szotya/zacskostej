@@ -2,7 +2,7 @@
 @font-face {
     font-family: "Roboto Flex";
     src: url("https://digitalupgrade.com/images/misc/RobotoFlex-VariableFont_GRADXTRAYOPQYTASYTDEYTFIYTLCYTUCopszslntwdthwght.woff2") format("woff2"); }
-.group-hover\:transition-transform {
+    .group-hover\:transition-transform {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
     animation-direction: alternate; }
@@ -69,8 +69,6 @@
 .navbar-web .nav-buttons{
     display: flex;
 }
-
-
 
 @media only screen and (min-width:430px) {
     .navbar-mobile .nav-buttons{
@@ -275,6 +273,154 @@ a:hover{
     line-height: 1.1;
     text-transform: uppercase;
     text-decoration: underline;
+}
+
+.stat-title{
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.stat-info{
+    display: block;
+    font-size: clamp(42px, 2.629rem + ((1vw - 3px) * 2.963), 80px);
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.stat{
+    margin: auto;
+    max-width: 1300px;
+    border-radius: 20px;
+    background-color: #000000;
+    color: #FFF4F4;
+    padding: 50px 0px 50px 0;
+}
+
+.stat-inverz{
+    padding: 50px 0px 50px 0;
+}
+
+@media only screen and (min-width: 1300px) {
+    .stat-div{
+        padding: 17px;
+        display: flex;
+        max-width: 1300px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+    }
+    .stat-text{
+        width: 50%;
+        align-items: center;
+        height: max-content;
+        font-weight: 900;
+    }
+
+    .stat-player{
+        width: 50%;
+        align-items: center;
+        height: max-content;
+    }
+    iframe{
+        margin: auto;
+        border-radius:12px;
+        width: 100%;
+        height: 351px;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1299px) {
+    .stat-div{
+        padding: 17px;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+    }
+    .stat-text{
+        width: 50%;
+        align-items: center;
+        height: max-content;
+        font-weight: 900;
+    }
+
+    .stat-player{
+        width: 50%;
+        align-items: center;
+        height: max-content;
+    }
+    iframe{
+        margin: auto;
+        border-radius:12px;
+        width: 496px;
+        height: 279px;
+    }
+}
+
+@media only screen and (min-width: 660px) and (max-width: 999px) {
+    .stat-div{
+        padding: 17px;
+        margin: auto;
+    }
+    .stat-text{
+        margin: auto;
+        width: 80%;
+        align-items: center;
+        height: max-content;
+        font-weight: 900;
+        padding: 10px;
+    }
+
+    .stat-player{
+        margin: auto;
+        width: 80%;
+        align-items: center;
+        align-self: center;
+        height: max-content;
+        padding: 10px;
+    }
+    iframe{
+        margin: auto;
+        border-radius:12px;
+        width: 496px;
+        height: 279px;
+    }
+}
+
+@media only screen and (max-width: 659px) {
+    .stat-div{
+        padding: 17px;
+        display: block;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+    }
+    .stat-text{
+        width: 100%;
+        align-items: center;
+        height: max-content;
+        font-weight: 900;
+    }
+
+    .stat-player{
+        width: 100%;
+        align-items: center;
+        align-self: center;
+        height: max-content;
+    }
+    iframe{
+        margin: auto;
+        border-radius:12px;
+        width: 288px;
+        height: 162px;
+    }
 }
 
 .social-welcome h2{
@@ -667,6 +813,21 @@ a:hover{
     box-shadow: inset 600px 0 0 0 #000000;
     color: white;
     text-decoration: none;
+}
+
+.underbuilding{
+    margin: auto;
+    margin-top: 150px;
+    max-width: fit-content;
+}
+
+.underbuilding-title{
+    display: block;
+    font-size: clamp(42px, 2.629rem + ((1vw - 3px) * 2.963), 80px);
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.1;
+    text-transform: uppercase;
 }
 
 body::-webkit-scrollbar {
