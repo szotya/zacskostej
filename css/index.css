@@ -70,15 +70,17 @@
     display: flex;
 }
 
-@media only screen and (min-width:430px) {
+@media only screen and (min-width:450px) {
     .navbar-mobile .nav-buttons{
         display: flex;
+        flex-direction: row;
     }
 }
 
-@media only screen and (max-width:429px) {
+@media only screen and (max-width:449px) {
     .navbar-mobile .nav-buttons{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -206,7 +208,7 @@ input[type="checkbox"]:checked ~ .logo{
     display: none;
 }
 
-@media only screen and (min-width: 1061px) {
+@media only screen and (min-width: 1080px) {
     .navbar-middle{
         display: flex;
         margin-left: 120px;
@@ -214,7 +216,7 @@ input[type="checkbox"]:checked ~ .logo{
     }
 }
 
-@media only screen and (min-width: 970px) and (max-width: 1060px) {
+@media only screen and (min-width: 970px) and (max-width: 1079px) {
     .navbar-middle{
         display: flex;
         margin-left: 20px;
@@ -222,7 +224,7 @@ input[type="checkbox"]:checked ~ .logo{
     }
 }
 
-@media only screen and (min-width: 970px) {
+@media only screen and (min-width: 983px) {
     .navbar-web{
         display: flex;
     }
@@ -231,7 +233,7 @@ input[type="checkbox"]:checked ~ .logo{
     }
 }
 
-@media only screen and (max-width: 969px) {
+@media only screen and (max-width: 982px) {
     .navbar-web{
         display: none;
     }
@@ -275,9 +277,125 @@ a:hover{
     text-decoration: underline;
 }
 
-.stat-title{
-    font-size: 14px;
-    letter-spacing: 1px;
+.achieve-title-div{
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.achieve-title{
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    color: #000000;
+}
+
+.achieve-title-text{
+    display: block;
+    font-size: clamp(42px, 2.629rem + ((1vw - 3px) * 2.963), 80px);
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.achieve-card-title{
+    margin: auto;
+    padding: 30px;
+    display: block;
+    font-size: clamp(30px, 2.629rem + ((1vw - 3px) * 2.963), 10px);
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.achieve-card-text{
+    padding: 30px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .achievements{
+        max-width: 1300px;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media only screen and (max-width: 999px){
+    .achievements{
+        max-width: 1300px;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .achieve2{
+        margin: auto !important;
+        margin-top: 20px !important; 
+    }
+
+    .achieve{
+        background-color: #000000;
+        border-radius: 40px;
+        color: #FFF4F4;
+        max-width: 420px;
+        min-height: 300px;
+        margin: auto;
+        margin-top: 20px;
+        align-items: center;
+        font-weight: 900;
+    }
+}
+
+@media only screen and (min-width: 440px){
+    .achieve{
+        background-color: #000000;
+        border-radius: 40px;
+        color: #FFF4F4;
+        width: 420px;
+        height: 300px;
+        margin: auto;
+        margin-top: 20px;
+        align-items: center;
+        font-weight: 900;
+    }
+}
+@media only screen and (max-width: 439px){
+    .achieve{
+        background-color: #000000;
+        border-radius: 40px;
+        color: #FFF4F4;
+        min-height: 300px;
+        margin: auto;
+        margin-top: 20px;
+        align-items: center;
+        font-weight: 900;
+    }
+}
+
+.achieve2{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.achieve-card-text{
+    font-family: 'Rubik';
+}
+
+.stat-title-text{
+    display: block;
+    font-size: clamp(30px, 2.629rem + ((1vw - 3px) * 2.963), 10px);
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.1;
     text-transform: uppercase;
     text-decoration: underline;
 }
@@ -293,6 +411,7 @@ a:hover{
 
 .stat{
     margin: auto;
+    margin-top: 25px;
     max-width: 1300px;
     border-radius: 20px;
     background-color: #000000;
@@ -300,8 +419,8 @@ a:hover{
     padding: 50px 0px 50px 0;
 }
 
-.stat-inverz{
-    padding: 50px 0px 50px 0;
+.stat-player{
+    text-align: center;
 }
 
 @media only screen and (min-width: 1300px) {
@@ -315,13 +434,15 @@ a:hover{
         height: max-content;
     }
     .stat-text{
-        width: 50%;
+        margin: auto;
+        max-width: fit-content;
         align-items: center;
         height: max-content;
         font-weight: 900;
     }
 
     .stat-player{
+        margin: auto;
         width: 50%;
         align-items: center;
         height: max-content;
@@ -334,7 +455,7 @@ a:hover{
     }
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1299px) {
+@media only screen and (min-width: 800px) and (max-width: 1299px) {
     .stat-div{
         padding: 17px;
         display: flex;
@@ -363,7 +484,7 @@ a:hover{
     }
 }
 
-@media only screen and (min-width: 660px) and (max-width: 999px) {
+@media only screen and (min-width: 660px) and (max-width: 799px) {
     .stat-div{
         padding: 17px;
         margin: auto;
@@ -407,6 +528,7 @@ a:hover{
         align-items: center;
         height: max-content;
         font-weight: 900;
+        padding: 10px;
     }
 
     .stat-player{
@@ -414,6 +536,7 @@ a:hover{
         align-items: center;
         align-self: center;
         height: max-content;
+        padding: 10px;
     }
     iframe{
         margin: auto;
@@ -446,6 +569,11 @@ a:hover{
 .spotify-texts{
     font-family: 'Rubik', serif;
 }
+
+.stat-texts{
+    font-family: 'Rubik', serif;
+}
+
 
 .twitch{
     background-color: #9146FF;
@@ -485,7 +613,7 @@ a:hover{
     }
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1299px) {
+@media only screen and (min-width: 1040px) and (max-width: 1299px) {
     .spotify-div{
         padding: 17px;
         display: flex;
@@ -514,7 +642,7 @@ a:hover{
     }
 }
 
-@media only screen and (min-width: 660px) and (max-width: 999px) {
+@media only screen and (min-width: 660px) and (max-width: 1039px) {
     .spotify-div{
         padding: 17px;
         margin: auto;
