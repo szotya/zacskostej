@@ -317,6 +317,15 @@ a:hover{
     padding: 30px;
 }
 
+.achieve-link{
+    color: white;
+    text-decoration: underline;
+}
+
+.achieve-link:hover{
+    color: #2000ff;
+}
+
 @media only screen and (min-width: 1000px) {
     .achievements{
         max-width: 1300px;
